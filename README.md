@@ -1,8 +1,8 @@
-# React + Vite
+### JUST'A'BOOK ###
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Key features:
+- Webpage stylised to look and function like a book.
+- Pages are actual 3D objects, turning and displaying content on both of it's sides.
+- Pages (and pagination) are created programmaticaly by the application by suppling pages' content into an array.
+- Unique way of displaying full sized pictureds in the gallery.
+- Design is responsive despite it's unusuality.

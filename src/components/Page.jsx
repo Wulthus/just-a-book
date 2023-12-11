@@ -1,22 +1,16 @@
-import { useState } from 'react';
 import Side from './Side';
 import styles from './page.module.css';
 
-export default function Page({ children, numPages, backPage }){
+export default function Page({ children, numPages, backPage, pages, setPages, flip }){
 
-    const [flipped, flip] = useState(false);
+    const flipped = pages[backPage];
 
     let index;
     if(flipped) index = backPage;
     if(!flipped) index = numPages - backPage;
 
-    function handleWheel(e){
-        if (e.deltaY > 0) flip(true);
-        if (e.deltaY < 0) flip(false);
-    }
-
     return (
-        <div className={`${styles['book__page']} ${flipped && styles.flipped}`} onWheel={(e)=>handleWheel(e)} style={{
+        <div className={`${styles['book__page']} ${flipped && styles.flipped}`} style={{
             zIndex: `${index}`
         }}>
                 <Side type='front' flip={flip} backPage={backPage}>

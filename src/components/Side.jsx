@@ -1,27 +1,26 @@
-import { useEffect, useState } from 'react';
 import styles from './side.module.css';
 
-export default function Side({ page, flip, type, backPage, children }){
+export default function Side({ flip, type, backPage, children }){
 
     let pageStyle = '';
 
     if(type === 'front'){
-      pageStyle = 'page__side--front';
+      pageStyle = 'page__side--front'
     }
     if(type === 'back'){
-      pageStyle = 'page__side--back';
+      pageStyle = 'page__side--back'
     }
 
     function handleNextPage(){
-        flip(true);
+        flip(backPage, true);
       }
 
     function handlePreviousPage(){
-        flip(false);
+        flip(backPage, false);
     }
 
     return (
-        <div className={`${styles.page__side} ${styles[pageStyle]}`}>
+        <div className={`${styles['page__side']} ${styles[pageStyle]}`}>
           <main className={`${styles[`page__side--content`]}`}>
             {children}
           </main>

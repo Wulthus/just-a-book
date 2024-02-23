@@ -70,15 +70,15 @@
 
 @keyframes hopIn {
     0% {
-        transform: translateY(-120dvh)
+        transform: translateY(-120%)
     }
 
     80% {
-        transform: translateY(+5dvh)
+        transform: translateY(5%)
     }
 
     100% {
-        transform: translateY(0dvh)
+        transform: translateY(0%)
     }
 }
 

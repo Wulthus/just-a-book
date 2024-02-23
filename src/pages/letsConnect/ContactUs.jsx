@@ -58,13 +58,13 @@ export default function ContactUs(){
                         {`${addressBook.emailLabel.padEnd(stringLength - addressBook.email.length, '. ')}`}<a href={`mailto:${addressBook.mail}`}  className={`${styles['contact-us__anchor']}`}>{addressBook.email}</a>
                     </li>
                 </ul>
-                <div className={`${styles['contact-us__links']}`}>
+             </div>
+             <div className={`${styles['contact-us__links']}`}>
                     <a href='#' className={`${styles['contact-us__anchor']}`}><FacebookIcon></FacebookIcon></a>
                     <a href='#' className={`${styles['contact-us__anchor']}`}><InstagramIcon></InstagramIcon></a>
                     <a href='#' className={`${styles['contact-us__anchor']}`}><TwitterIcon></TwitterIcon></a>
                     <a href='#' className={`${styles['contact-us__anchor']}`}><TiktokIcon></TiktokIcon></a>
                 </div>
-             </div>
         </div>
     )
     

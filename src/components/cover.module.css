@@ -2,8 +2,8 @@
     display: block;
     box-sizing: border-box;
     background-color: #fff;
-    width: 47vw;
-    height: 80vh;
+    width: 47dvw;
+    height: 80dvh;
     background-size: cover;
 
     padding: 4rem;
@@ -30,7 +30,9 @@
 
 @media (max-height: 520px) {
     .cover {
+        width: 48vw;
         width: 48dvw;
+        height: 90vh;
         height: 90dvh;
     }
 }

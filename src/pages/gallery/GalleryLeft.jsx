@@ -4,7 +4,7 @@ import styles from './gallery.module.css';
 
 export default function GalleryLeft(){
     return (
-        <article className={styles.gallery}>
+        <section className={styles.gallery}>
             <div className={`${styles['gallery__title']}`}>
                 <h3 className={`${styles['gallery__label']}`}>Gallery</h3>
                 <img className={styles['gallery__ornament--image']} src='johnny_automatic_hops_and_barley.svg' alt="Small company logo"></img>
@@ -31,6 +31,6 @@ export default function GalleryLeft(){
                     Quality ingredients only
                 </GalleryImage>
             </div>
-        </article>
+        </section>
     )
 }

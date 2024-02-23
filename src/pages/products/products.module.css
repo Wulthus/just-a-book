@@ -30,7 +30,7 @@
     min-height: 0px;
     display: flex;
     align-items: center;
-    padding: 1rem;
+    /* padding: 1rem; */
     align-self: start;
 
 }
@@ -54,7 +54,6 @@
 
 .product-card__description {
     font-size: 1.9rem;
-    padding: 1rem 2rem;
 }
 
 .product-card__description-name {
